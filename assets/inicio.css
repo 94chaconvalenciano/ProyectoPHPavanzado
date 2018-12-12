@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
+
+header {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px 0px transparent;
+}
+
+#logoheader {
+    background-color: transparent;
+}
+
+#menu {
+    background-color: transparent;
+}
+
+#blog {
+    background-color: transparent;
+}
+
+#contacto {
+    background-color: transparent
+}
+
+#blog:hover {
+    background-color: #f6ab2b;
+    color: black;
+}
+
+#contacto:hover {
+    background-color: #c1826a;
+    color: black;
+}
+
+.linkmenu {
+    color: white;
+}
+
+.linkmenu:hover {
+    color: black;
+}
+
+main {
+    margin-top: 0;
+}
+
+.cover {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.tituloprincipal {
+    height: 100vh;
+    padding: 30vh 0%;
+}
+
+#descrip {
+    width: 30%;
+    margin: 2vh 35%;
+    font-size: 4vh;
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+}
+
+#down {
+    width: 6%;
+    margin: 1vh 45%;
+
+}
+
+#coverinicio {
+    background-image: url(fondoinicio.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+}
+
+#sobrenosotros {
+    padding-bottom: 10vh;
+    font-size: 2.5vh;
+    display: none;
+}
+
+#nuestrocafe {
+    color: white;
+    background-image: url(nuestrocafeinicio.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 20vh;
+    text-align: center;
+}
+
+#nuestrocafe > p {
+    text-align: center;
+}
+
+#nuestrocafe > h1 {
+    color: white;
+}
+
+#linkreserva {
+    background-color: #350f1a;
+}
+
+#linkreserva > .sec50 > h2 {
+    color: white
+}
+
+.button {
+    float: none;
+    margin: 10vh 32%;
+    border: solid 2px black;
+}
+
+.button:hover {
+    border: solid 2px white;
+    background-color: #350f1a
+}
+
+
+#secredes {
+    background-image: url(cafeteria2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#secredes > .sec50 > h1 {
+    color: white;
+}
+
+.redes {
+    width: 40%;
+    margin: 3vh 30%;
+    display: none;
+}
+
+.redes > img {
+    float: left;
+    width: 3vh;
+    margin: 0.5vh 2%;
+
+
+}
+
+.redes > p {
+    height: 4vh;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    #logoheader {
+        background-color: black
+    }
+
+    #nuestrocafe {
+        padding-top: 12vh;
+        height: 100vh;
+    }
+
+    #descrip {
+        width: 80%;
+        margin: 1vh 10%;
+        font-size: 4vh;
+
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    main {
+        margin-top: 20vh
+    }
+
+    header {
+        background-color: transparent;
+        box-shadow: 0px 0px 0px 0px transparent;
+    }
+
+    #logoheader {
+        background-color: black;
+    }
+
+    .cover {
+        height: 100vh;
+    }
+
+    #descrip {
+        width: 50%;
+        margin: 1vh 25%;
+        font-size: 6vh
+    }
+
+    #down {
+        margin: 0vh 45%
+    }
+
+    .tituloprincipal {
+        height: 100vh;
+        padding: 9vh 0%;
+
+
+    }
+
+    #nuestrocafe {
+        height: 100vh;
+        padding-bottom: 15vh;
+        padding-top: 10vh;
+    }
+}

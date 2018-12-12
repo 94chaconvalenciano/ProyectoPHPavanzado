@@ -1,0 +1,864 @@
+@font-face {
+  font-family: "hind";
+  src: url("assets/HindVadodara.ttf");
+}
+@font-face {
+  font-family: "Playfair";
+  src: url("Playfair.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Hind', sans-serif;
+    text-align: left;
+    font-size: 2.5vh;
+}
+
+
+/*---------------------Indice------------------------
+
+
+    01.Estilos del Template
+        -A.Estilos de Header
+        -B.Estilos para el Body
+        -C.Estilos para títulos
+        -D.Estilos para parrafos
+        -E.Estilos para imagenes
+        -F.Estilos del footer
+    02.Edificio Maroy
+    03.Métodos de extracción
+    04.Menú
+    05.Variedades de Café
+    06.Blog
+    07.Contacto
+    08.Estilos dispositivos móviles
+
+
+
+
+/*--------------------------01.Estilos del Template--------------------------*/
+/*--------------------01-A.Estilos de header---------------------*/
+header {
+    width: 100%;
+    height: 9vh;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 0px 7px 0px black;
+    transition: 0.3vh;
+    z-index: 2000;
+}
+
+#logoheader {
+    width: 100%;
+    height: 19vh;
+    margin: auto;
+    background-color: white;
+}
+
+#logoheader > img {
+    width: 30%;
+    margin: 0 35%;
+}
+
+#menu {
+    width: 100%;
+    height: 9vh;
+    display: inline-block;
+    float: left;
+    background-color: white;
+}
+
+.linkmenu {
+    width: 14.285%;
+    height: 9vh;
+    float: left;
+    padding: 2.5vh 1%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    color: black;
+    transition: 0.2s;
+    font-family: 'Playfair', serif;
+    font-size: 2.4vh;
+
+}
+
+.linkmenu:hover {
+    height: 10vh;
+    background-color: #f1eec4;
+    padding: 3vh 1%;
+    color: black;
+}
+
+#blog {
+    background-color: #f6ab2b;
+}
+
+#contacto {
+    background-color: #c1826a
+}
+
+#menu-responsive {
+    z-index: 10000;
+    display: none;
+    background-color: white;
+    width: 100%;
+
+}
+
+.menu-responsive ul {
+    width: 100%;
+    float: right;
+    display: none;
+}
+
+#iconomenu {
+    height: 5vh;
+}
+
+#menu-responsive a {
+    width: 100%;
+    float: right;
+    height: 9vh;
+    background-color: black;
+    color: white;
+    padding: 2vh;
+    display: block;
+    box-sizing: border-box;
+    font-size: 3vh;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.bot {
+    width: -200%;
+    height: 9vh;
+    background-color: black;
+    list-style: none;
+    border-bottom: solid 2px black;
+    padding: 2vh;
+    box-sizing: border-box;
+    transition: 0.2s;
+    color: white;
+    font-size: 2.5vh;
+    text-align: center;
+
+}
+
+.bot:hover {
+    background-color: #f6ab2b
+}
+
+#menu-responsive a:hover {
+    background-color: ;
+}
+
+
+
+/*--------01-B.Estilos del Body----------------------*/
+body {
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    width: 100%;
+    margin: 20vh auto 0 auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.cover-v{
+    width: 100%;
+    height: 80vh;
+    background-image: url(variedades.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+
+}
+.cover {
+    width: 100%;
+    height: 80vh;
+    background-image: url(fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+
+}
+
+.tituloprincipal {
+    width: 100%;
+    height: 80vh;
+    padding: 16vh 3%;
+    color: white;
+    text-align: center;
+    font-size: 19vh;
+    font-family: 'Playfair', serif;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/*--------------01-C.Estilos para tititulos------------------------*/
+h1 {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+    font-size: 290%;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 2vh;
+    color: #350F1A;
+    font-family: 'Playfair', serif;
+
+}
+
+h2 {
+    width: 100%;
+    font-size: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 250%;
+    overflow: hidden;
+    color: #350F1A;
+    font-family: 'Playfair', serif;
+
+}
+
+h3 {
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 150%;
+    color: #350F1A;
+    font-family: 'Playfair', serif;
+
+
+}
+
+/*----------------------01-D.Estilos para párrafos---------------------------*/
+
+
+/*section 100%*/
+
+
+.sec100 {
+    width: 100%;
+    padding: 5vh 12%;
+    box-sizing: border-box;
+    font-size: 120%;
+    background-color: white;
+    color: gray;
+}
+
+
+/*Section 50%*/
+.sec50prin {
+    width: 100%;
+    height: auto;
+    padding: 0 8%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: white;
+    color: gray;
+
+}
+
+.sec50 {
+    width: 50%;
+    padding: 5vh 4%;
+    box-sizing: border-box;
+    float: left;
+    font-size: 120%;
+}
+
+.sec66 {
+    width: 66%;
+    padding: 5vh 4%;
+    box-sizing: border-box;
+    float: left;
+    font-size: 120%;
+}
+
+
+
+.sec25prin {
+    width: 100%;
+    height: auto;
+    padding: 0 8%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: white;
+    color: gray;
+
+}
+.sec25 {
+    width: 25%;
+    height: 80vh;
+    padding: 5vh 4%;
+    box-sizing: border-box;
+    float: left;
+    font-size: 120%;
+}
+
+.sec25 > p{
+    font-size: 50%
+}
+
+/*section 30%*/
+.sec33prin {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 0 8%;
+    box-sizing: border-box;
+    font-size: 120%;
+    background-color: white;
+    color: gray;
+}
+
+.sec33 {
+    width: 33.3%;
+    height: 100%;
+    padding: 5vh 4%;
+    box-sizing: border-box;
+    float: left;
+}
+
+#imagenmenu{
+    
+    width: 50%
+    
+}
+
+/*--------------01-E.estilos para imagenes------------------------*/
+.imagen {
+    width: 100%;
+    margin: 4vh 0;
+
+}
+
+
+/*----------------------01-F.estilos del footer--------------------*/
+footer {
+    width: 100%;
+    height: 12vh;
+    background-color: black;
+    color: white;
+    padding-top: 4vh;
+    box-sizing: border-box;
+}
+
+footer > p {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+
+
+
+/*------------------------02.Estilos Edificio Maroy(Caro)------------------------------*/
+
+#Arquitectura {
+    width: 66%;
+    padding: 5vh 0% 5vh 3%;
+    float: right;
+    font-size: 120%;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+#Patrimonio {
+    width: 66%;
+    padding: 5vh 3% 5vh 0%;
+    float: left;
+    font-size: 120%;
+    box-sizing: border-box
+}
+
+
+
+/*----------------------03.Metodos de Extracción(Joss y Karla)--------------------------*/
+
+    
+          
+
+
+/*----------------------04-Menú(Meli)----------------------------------------------------*/
+    #saladas, #frutas, #topping {
+        
+    width: 66%;
+        
+}
+
+
+/*-------------------------05.Variedades de café(Alexis)-----------------------------------*/
+
+
+.infomenu:hover{
+    
+    display: none:
+    
+}
+
+
+.infomenu:hover .textmenu {
+    
+    display: block;
+    
+}
+
+
+
+
+
+
+/*--------------------------06.Blog(Ana)----------------------------------------------------*/
+
+.button {
+    width: 30vh;
+    height: 5vh;
+    background-color: black;
+    float: right;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+
+
+}
+
+.button:hover {
+    background-color: gray;
+}
+
+
+
+
+
+
+/*----------------------------07.Contacto(Alfredo)------------------------------------------*/
+
+.cover-c {
+    background-image: url(contacto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.subti-c {
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    font-size: 34px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+#reservacion {
+    background: #350F1A;
+    margin: 0px 0px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+
+}
+
+#gracias {
+    background: #F6AB2B;
+    margin: 0px 0px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    color: #350F1A;
+    display: none;
+
+}
+
+.subti-g {
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    font-size: 34px;
+    color: #350F1A;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.principal {
+    background: #F1EEC4;
+    margin: 0px 0px;
+    height: auto;
+    padding: 30px 10px;
+    text-align: center;
+    color: #350F1A;
+
+}
+
+.row {
+    padding-bottom: 40px;
+    padding-top: 20px;
+
+}
+
+.titulo-c {
+
+    text-align: center;
+    color: #350F1A;
+
+}
+
+.parrafo-c {
+    text-align: center;
+    padding: 5px 10px;
+
+}
+
+.container-fluid {
+    background: #F1EEC4;
+    padding-bottom: 0px;
+}
+
+.titulo-h2 {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+
+/*-------------Estilo de formulario-----------------*/
+
+form {
+    width: 96%;
+    border: 1px solid #F6AB2B;
+    margin: 20px 5px;
+    padding: 20px;
+}
+
+label {
+    font-size: 12px;
+    display: block;
+    /*convertir los label en elementos de bloque*/
+    width: 100%;
+
+}
+
+input,
+textarea {
+    margin-bottom: 20px;
+    /*espacio inferior entre cada campo*/
+    width: 100%;
+    padding: 10px;
+    /*dar un espaciado interno a los campos*/
+    -webkit-box-sizing: border-box;
+    /*Son los prefijos que se utilizan para que los navegadores reconozcan las propiedades de flexbox*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*Se utiliza para que los campos input, no se peguen al borde de la tabla y dejen un margen o espacio y se vean ordenados*/
+    border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #F6AB2B;
+}
+
+textarea {
+    resize: vertical;
+    /*nos permite cambiar el tamaño*/
+    /*-esta propiedad puede ser: horizontal, both, vertical */
+    max-height: 300px;
+    /*para establecerle una altura máxima a la propiedad vertical*/
+    min-height: 100px;
+    /*para establecerle una altura mínima*/
+}
+
+input[type="submit"] {
+    margin-bottom: 0;
+    /*para quitar el espaciado que tenia en la parte de abajo con el formulario*/
+    background: #350F1A;
+    color: #F1EEC4;
+    border-radius: 8px;
+    text-align: center;
+
+
+}
+
+/*--Estilo 7: hover para el botom*/
+input[type="submit"]:hover {
+    background: #F6AB2B;
+    color: #350F1A;
+    cursor: pointer;
+    /*para cambiar el estilo del cursor al pasar por encima del botom*/
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.secOn {
+    width: 100%;
+    padding: 5vh 12%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/*-----Estilos párrafos alerta---*/
+
+.alertName,
+.alertCorreo,
+.alertMensaje,
+.alertError {
+    color: #C1826A;
+    text-align: left;
+    margin-bottom: 10px;
+    display: none;
+}
+
+label {
+    color: #350F1A;
+    font-size: 1em;
+
+}
+
+#row-resenas{
+    background-image: url(../assets/paisajismo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#elemento-carousel{
+    background-color: black;
+    color: white;
+    height: 350px;
+}
+#body_nueva_resena{
+    background-image: url(cupcakes.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*----------------------07estilos para dispositivos móviles--------------------------*/
+@media screen and (max-width: 900px) {
+    .tituloprincipal {
+        font-size: 17vh
+    }
+
+    header nav {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .#logoheader {
+        width: 100%;
+        height: 19vh;
+        margin: auto;
+        background-color: white;
+    }
+
+    #logoheader > img {
+        width: 45%;
+        margin: 0 27.5%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #logoheader {
+        width: 100%;
+        height: 19vh;
+        margin: auto;
+        background-color: white;
+    }
+
+    #logoheader > img {
+        width: 50%;
+        margin: 0 25%;
+    }
+
+    nav {
+        display: block;
+    }
+
+    h1 {
+        font-size: 200%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 160%;
+        text-align: left
+    }
+
+    h3 {
+        font-size: 110%;
+        text-align: left;
+        height: 10vh;
+    }
+
+    .sec100 {
+        width: 100%;
+        padding: 5vh 12%;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .sec50prin {
+        width: 100%;
+        padding: 0 10%;
+
+    }
+
+    .sec50 {
+        width: 100%;
+        padding: 5vh 2%;
+        box-sizing: border-box;
+        float: left;
+        text-align: left;
+
+    }
+
+    .sec33prin {
+        width: 100%;
+        padding: 0 10%;
+        box-sizing: border-box;
+    }
+
+    .sec33 {
+        width: 100%;
+        padding: 1.5vh 2% 1.5vh 2%;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .cover {
+        height: 50vh;
+    }
+
+    .tituloprincipal {
+        height: 50vh;
+        font-size: 11.5vh;
+    }
+
+    .divlogo {
+        width: 9%;
+    }
+
+    #Arquitectura {
+        width: 100%;
+        padding: 5vh 3%;
+        float: right;
+        font-size: 120%;
+        margin-top: 50px;
+    }
+
+    #Patrimonio {
+        width: 100%;
+        padding: 5vh 3%;
+        float: left;
+        font-size: 120%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .tituloprincipal {
+        font-size: 10vh;
+    }
+
+    .#logoheader {
+        width: 100%;
+        height: 19vh;
+        margin: auto;
+        background-color: white;
+    }
+
+    #logoheader > img {
+        width: 70%;
+        margin: 0 15%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cover {
+        height: 45vh;
+    }
+
+    .tituloprincipal {
+        font-size: 7.6vh;
+        height: 45vh;
+    }
+
+    .#logoheader {
+        width: 100%;
+        height: 19vh;
+        margin: auto;
+        background-color: white;
+    }
+
+    #logoheader > img {
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .cover {
+        height: 45vh;
+    }
+
+    .tituloprincipal {
+        font-size: 8vh;
+        height: 45vh;
+    }
+
+    .#logoheader {
+        width: 100%;
+        height: 19vh;
+        margin: auto;
+        background-color: white;
+    }
+
+    #logoheader > img {
+        width: 100%;
+        margin: 0;
+    }
+}
