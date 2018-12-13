@@ -173,19 +173,19 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div class="container">
+<div class="container" style="width:600px;">
     <div class="table-wrapper">
         <div class="table-title">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-md-10">
                     <h2>Iniciar <b>Sesión</b></h2>
                 </div>
 
             </div>
         </div>
-        <div class="container">
-            <div class="col-sm-11">
-                <div class="container-fluid">
+        <div class="container" style="width:600px;">
+            <div class="row">
+                <div class="col-md-10">
                     <form role="form" name="login" action="loginconfig.php" method="post">
                         <div class="form-group">
                             <label for="username">Nombre de usuario o email</label>
