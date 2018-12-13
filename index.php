@@ -113,7 +113,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM resenas ORDER BY id DESC");
                 <div id="carouselExampleControls" class="carousel slide col-12" data-ride="carousel">
                     <div class="row carousel-inner justify-content-center">
                         <div class="row carousel-item active col-12 justify-content-center">
-                            <div class="col-xl-5 col-lg-5 col-md-8 col-sm-10 col-12 m-auto p-5"  id="elemento-carousel">
+                            <div class="col-xl-5 col-lg-5 col-md-8 col-sm-10 col-12 m-auto p-5"  id="elemento-carousel" style="height: 350px;">
                                 <h4>JEREMY MONGE SOLÍS</h4>
                                 <p>Aliquam rutrum leo elit, a convallis ex sodales in. Praesent venenatis, elit non lobortis congue, dui diam posuere nulla, sit amet consequat risus nunc et nunc. Phasellus tempus hendrerit elit. Pellentesque egestas sapien at luctus vulputate. Praesent felis erat, volutpat sed euismod eget, volutpat in sapien. Cras euismod magna non libero fermentum, at eleifend nibh fermentum. Sed elementum nibh ac nunc scelerisque, in faucibus mi pretium.</p>
                             </div>
@@ -125,7 +125,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM resenas ORDER BY id DESC");
         
                         while($user_data=mysqli_fetch_array($result)){
                             echo " <div class='row carousel-item col-12 justify-content-center'>
-                            <div class='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-12 m-auto p-5' id='elemento-carousel'>
+                            <div class='col-xl-5 col-lg-5 col-md-8 col-sm-10 col-12 m-auto p-5' id='elemento-carousel' style='height: 350px;'>
                             <h4>".$user_data['autor']."</h4><p>".$user_data['texto']."</p></div></div>";
 
                         }

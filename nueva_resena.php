@@ -50,10 +50,6 @@
                 <textarea class="form-control" placeholder="Reseña(443 caracteres máximo)" name="texto" maxlength="443" style="height: 200px" id="texto" required></textarea>
             </div>
             <div class="form-group row col-lg-12 justify-content-center">
-                        <div class="col-lg-6">
-                            <img id="barcode" width="100%" style="margin-top: 20px">
-                        </div>
-
                     </div>
             <input type="submit" name="Submit" onclick="generarcupon()" class="btn btn-primary m-auto" value="Enviar">
             <a href="index.php" class="btn btn-danger m-auto">Volver a Inicio</a>

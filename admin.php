@@ -176,9 +176,11 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="Index.php">Inventario <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="admin.php">Inventario <span class="sr-only">(current)</span></a></li>
         <li><a href="usuarios.php">Usuarios</a></li>
-          <li><a href="resenas.php">Reseñas</a></li>
+          <li><a href="tabla_resenas.php">Reseñas</a></li>
+           <li><a href="tabla_cupones.php">Cupones</a></li>
+          <li><a href="tablaordenes.php">Ordenes</a></li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">

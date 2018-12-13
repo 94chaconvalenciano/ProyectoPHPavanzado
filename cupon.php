@@ -52,7 +52,7 @@ $fecha = $_GET['fecha'];
             </div>
             <div class="row form-group">
                 <div class="col-8">
-                <input type="text" class="form-control" placeholder="Código" name="codigo" id="codigo" required readonly="readonly">
+                <input type="text" class="form-control" placeholder="Código" name="codigo" id="codigo" value="" required readonly="readonly">
                 </div>
                  <div class="col-4">
                 <input type="button" class="btn btn-info" value="Generar Cupón" id="generar_codigo" name="generar_codigo" onclick="generarSKU()">
@@ -79,7 +79,7 @@ $fecha = $_GET['fecha'];
                 include_once("config.php");
 
                 $result = mysqli_query($mysqli, "INSERT INTO
-                cupones(id_cupon, fecha, cliente, correo, codigo) VALUES('','$fecha','$nombre','$correo','$codigo')");
+                cupones(id, fecha, cliente, correo, codigo) VALUES('','$fecha','$nombre','$correo','$codigo')");
                     
                     header("Location:index.php");
                     

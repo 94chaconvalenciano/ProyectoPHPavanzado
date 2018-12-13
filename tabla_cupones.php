@@ -1,7 +1,7 @@
 <?php
 
 include_once("config.php");
-$result = mysqli_query($mysqli, "SELECT * FROM ordenes ORDER BY id DESC");
+$result = mysqli_query($mysqli, "SELECT * FROM cupones ORDER BY id DESC");
 
 ?>
 <?php
@@ -12,6 +12,8 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
 
 ?>
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -215,8 +217,8 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                     <li><a href="admin.php">Inventario</a></li>
                     <li><a href="usuarios.php">Usuarios <span class="sr-only">(current)</span></a></li>
                     <li><a href="tabla_resenas.php">Reseñas</a></li>
-                    <li><a href="tabla_cupones.php">Cupones</a></li>
-                    <li  class="active"><a href="tablaordenes.php">Ordenes</a></li>
+                    <li class="active"><a href="tabla_cupones.php">Cupones</a></li>
+                    <li><a href="tablaordenes.php">Ordenes</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -232,7 +234,7 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h2>Ordenes<b></b></h2>
+                            <h2>Cupones <b></b></h2>
                         </div>
                         <div class="col-sm-6">
                         </div>
@@ -242,11 +244,10 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                     <thead>
                         <tr>
                             <th>Id</th>
-                            <th>Nombre</th>
-                            <th>Telefono</th>
-                            <th>Dirección</th>
-                            <th>Tipo</th>
-                            <th>Comentario</th>
+                            <th>Fecha</th>
+                            <th>Cliente</th>
+                            <th>Correo</th>
+                            <th>Código</th>
                             <th>Opciones</th>
                         </tr>
                     </thead>
@@ -256,17 +257,14 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                     while($user_data=mysqli_fetch_array($result)){
                         echo "<tr>";
                         echo "<td>".$user_data['id']."</td>";
-                        echo "<td>".$user_data['Nombre']."</td>";
-                        echo "<td>".$user_data['Telefono']."</td>";
-                        echo "<td>".$user_data['Direccion']."</td>";
-                        echo "<td>".$user_data['Calificacion']."</td>";
-                        echo "<td>".$user_data['comentario']."</td>";
-                        
-                        
+                        echo "<td>".$user_data['fecha']."</td>";
+                        echo "<td>".$user_data['cliente']."</td>";
+                        echo "<td>".$user_data['correo']."</td>";
+                        echo "<td>".$user_data['codigo']."</td>";
 
                         //operaciones
 
-                        echo"<td><a href='eliminarordenes.php?id=$user_data[id]' class='delete'><i class='material-icons' data-toggle='tooltip' title='Delete'>&#xE872;</i></a></td></tr>";
+                        echo"<td><a href='eliminar_cupon.php?id=$user_data[id]' class='delete'><i class='material-icons' data-toggle='tooltip' title='Delete'>&#xE872;</i></a></td></tr>";
 
                     }
             

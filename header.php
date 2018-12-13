@@ -29,7 +29,7 @@
         <img src="assets/iconoinicio.png">
     </div>
     <div id="menu">
-        <div class="linkmenu" onclick="location.href='inicio.php'">Inicio</div>
+        <div class="linkmenu" onclick="location.href='index.php'">Inicio</div>
         <div class="linkmenu" onclick="location.href='EdificioMaroy.php'">Edificio Maroy</div>
         <div class="linkmenu" onclick="location.href='MetodosExtraccion.php'">Extracción</div>
         <div class="linkmenu" onclick="location.href='Menu.php'">Menú</div>
