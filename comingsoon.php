@@ -178,20 +178,16 @@ $result = mysqli_query($mysqli, "SELECT * FROM productos ORDER BY id DESC");
   </div><!-- /.container-fluid -->
 </nav>
 <div class="container">
-    <div class="table-wrapper">
-        <div class="table-title">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h2>Manejar <b>Productos</b></h2>
+   
+      
+                <div class="col-sm-8"><br><br><br><br>
+                    <h2>COMING SOON <b>'chas gracias...</b></h2>
                 </div>
-                <div class="col-sm-6">
-                    <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>COMING SOON 'chas gracias</span></a>						
-                </div>
-            </div>
-        </div>
+                
+       
     
 
-    </div>
+  
 </div>
 
 
