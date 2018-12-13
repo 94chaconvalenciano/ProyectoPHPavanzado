@@ -10,6 +10,6 @@ $result = mysqli_query($mysqli, "INSERT INTO
 productos(nombre_producto,descripcion) VALUES('$nombre_producto','$descripcion')");
 }
 // Redireccionar a inicio
-header("Location: Index.php");
+header("Location: admin.php");
 
 ?>

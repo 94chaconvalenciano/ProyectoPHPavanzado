@@ -233,42 +233,53 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
 <div id="addEmployeeModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form role="form" name="usuarios" action="adduser.php" method="post">
+            <form role="form" name="usuarios" onsubmit="return validate()" action="adduser.php" method="post">
                 <div class="modal-header">
                     <h4 class="modal-title">Agregar Usuario</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="username">Nombre de usuario</label>
-                        <input type="text" class="form-control" id="username" name="username" placeholder="Nombre de usuario">
+                        <label for="username">Nombre de usuario*</label>
+                        <input type="text" class="form-control" id="username" name="username" required placeholder="Nombre de usuario">
                     </div>
                     <div class="form-group">
-                        <label for="fullname">Nombre Completo</label>
-                        <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Nombre Completo">
+                        <label for="fullname">Nombre Completo*</label>
+                        <input type="text" class="form-control" id="fullname" name="fullname" required placeholder="Nombre Completo">
                     </div>
                     <div class="form-group">
-                        <label for="email">Correo Electronico</label>
+                        <label for="email">Correo Electronico* </label>
                         <input type="email" class="form-control" id="email" name="email" placeholder="Correo Electronico">
                     </div>
                     <div class="form-group">
                         <label for="password">Contrase&ntilde;a</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Contrase&ntilde;a">
+                        <input type="password" class="form-control" id="password" name="password" required placeholder="Contrase&ntilde;a">
                     </div>
                     <div class="form-group">
-                        <label for="confirm_password">Confirmar Contrase&ntilde;a</label>
-                        <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirmar Contrase&ntilde;a">
+                        <label for="confirm_password">Confirmar Contrase&ntilde;a *</label>
+                        <input type="password" class="form-control" id="confirm_password" required name="confirm_password" placeholder="Confirmar Contrase&ntilde;a">
                     </div>
                 </div>
                 <div class="modal-footer">
                     <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
                     <input type="submit" class="btn btn-success" name="Agregar" value="Agregar">
                 </div>
+                <script>
+                    function validate(){
+
+                        var a = document.getElementById("password").value;
+                        var b = document.getElementById("confirm_password").value;
+                        if (a!=b) {
+                           alert("Passwords do not match");
+                           return false;
+                        }
+                    }
+                 </script>           
             </form>
 
         </div>
     </div>
 </div>
-<script src="js/valida_registro.js"></script>
+
 </body>
 </html>                                		                            

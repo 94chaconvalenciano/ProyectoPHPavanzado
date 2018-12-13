@@ -11,7 +11,7 @@
             $result = mysqli_query($mysqli, "UPDATE productos SET
             nombre_producto='$nombre_producto',descripcion='$descripcion' WHERE id=$id");
             // Redireccionar a inicio
-            header("Location: Index.php");
+            header("Location: admin.php");
         }
 ?>
 <?php
@@ -188,7 +188,7 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                     <h2>Editar <b>Productos</b></h2>
                 </div>
                 <div class="col-sm-6">
-                    <a href="Index.php" class="btn btn-success"><span>Volver a Inicio</span></a>
+                    <a href="admin.php" class="btn btn-success"><span>Volver a Inicio</span></a>
                 </div>
             </div>
         </div>

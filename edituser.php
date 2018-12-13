@@ -4,6 +4,7 @@
     // Check if form is submitted for user update, then redirect to homepage after update
     if(isset($_POST['update']))
         {
+            $id = $_POST['id'];
             $username = $_POST['username'];
             $fullname = $_POST['fullname'];
             $email = $_POST['email'];
@@ -199,26 +200,26 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
     <div class="col-sm-11">
         <div class="container-fluid">
             <div class="form-row">
-                <form name="update_user" method="post" action="edituser.php">
+                <form name="update_user" method="post" onsubmit="return validate()" action="edituser.php">
                         <div class="form-group">
                             <label for="username">Nombre de usuario</label>
-                            <input type="text" class="form-control" id="username" name="username" value=<?php echo $username;?>>
+                            <input type="text" class="form-control" id="username" required name="username" value=<?php echo $username;?>>
                             </div>
                         <div class="form-group">
                             <label for="fullname">Nombre Completo</label>
-                            <input type="text" class="form-control" id="fullname" name="fullname" value=<?php echo $fullname;?>>
+                            <input type="text" class="form-control" id="fullname" required name="fullname" value=<?php echo $fullname;?>>
                         </div>
                         <div class="form-group">
                             <label for="email">Correo Electronico</label>
-                            <input type="email" class="form-control" id="email" name="email" value=<?php echo $email;?>>
+                            <input type="email" class="form-control" id="email" required name="email" value=<?php echo $email;?>>
                         </div>
                         <div class="form-group">
                             <label for="password">Contrase&ntilde;a</label>
-                            <input type="password" class="form-control" id="password" name="password"  value=<?php echo $password;?>>
+                            <input type="password" class="form-control" id="password" required name="password"  value=<?php echo $password;?>>
                         </div>
                         <div class="form-group">
                             <label for="confirm_password">Confirmar Contrase&ntilde;a</label>
-                            <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirmar Contrase&ntilde;a">
+                            <input type="password" class="form-control" id="confirm_password" required name="confirm_password" placeholder="Confirmar Contrase&ntilde;a">
                         </div>
                     <input type="hidden" name="id" value=<?php echo $_GET['id'];?>>
 
@@ -226,14 +227,23 @@ if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
                             <button type="submit" class="btn btn-primary" name="update" value="Update">Guardar Cambios</button> </div>
 
                 </form>
-                
+                <script>
+                    function validate() {
+
+                        var a = document.getElementById("password").value;
+                        var b = document.getElementById("confirm_password").value;
+                        if (a != b) {
+                            alert("Passwords do no match");
+                            return false;
+                        }
+                    }
+                </script>
             </div>
         </div>
     </div>
 </div>
 </div>
 </div>
-   <script src="js/valida_edit.js"></script>
          
 </body>
 
