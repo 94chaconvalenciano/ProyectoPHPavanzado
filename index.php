@@ -110,7 +110,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM resenas ORDER BY id DESC");
         </section>
         <div class="row col-12 m-0" id="row-resenas">
                 <H1 class="col-xl-12 text-center" style="color:white">RESEÑAS</H1>
-                <div id="carouselExampleControls" class="carousel slide col-12" data-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide carousel-fade col-12" data-ride="carousel">
                     <div class="row carousel-inner justify-content-center">
                         <div class="row carousel-item active col-12 justify-content-center">
                             <div class="col-xl-5 col-lg-5 col-md-8 col-sm-10 col-12 m-auto p-5"  id="elemento-carousel" style="height: 350px;">
