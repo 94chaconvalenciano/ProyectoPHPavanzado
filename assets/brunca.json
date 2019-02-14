@@ -1,0 +1,30 @@
+{
+    "region1": "Coto Brus",
+    "descripcion1": "Está ubicada entre reservas biológicas e integrada por los distritos cafetaleros San Vito, Sabalito, Agua Buena, Limoncito, Pittier y Coto Brus.",
+    "caracteristicas1":[
+        {"titulo": "El terreno es sumamente irregular, con abundante vegetación y condiciones cercanas a las ideales para la producción de café. El cultivo del grano lo realizan productores en fincas cuyas altitudes oscilan entre los 900 y 1.400 metros y en suelos de origen volcánico. Aproximadamente un 85% del área cafetalera de Coto Brus está entre los 800 y 1.200 metros de altitud, por lo que su café como del tipo MHB Medium Hard Bean, con muy buena aceptación en el mercado internacional."
+        },
+        { "titulo": "La recolección es temprana, de setiembre a febrero y muy cotizada por su fácil compatibilidad con cafés de otras latitudes. Es ideal para los llamados Christmas blends."
+        },
+        {"titulo": "La dureza del grano es en un 40% buena y en un 60% media y sus características de taza son de acidez, aroma y cuerpo normal (40% buena, 60% media)."
+        }
+    ]
+}
+
+
+
+
+
+/*
+<REGION>
+<NOMBRE>Coto Brus</NOMBRE> 
+<INTRO>Está ubicada entre reservas biológicas e integrada por los distritos cafetaleros San Vito, Sabalito, Agua Buena, Limoncito, Pittier y Coto Brus.</INTRO>
+<CARACTERISTICAS>El terreno es sumamente irregular, con abundante vegetación y condiciones cercanas a las ideales para la producción de café. El cultivo del grano lo realizan productores en fincas cuyas altitudes oscilan entre los 900 y 1.400 metros y en suelos de origen volcánico.
+
+Aproximadamente un 85% del área cafetalera de Coto Brus está entre los 800 y 1.200 metros de altitud, por lo que su café como del tipo MHB Medium Hard Bean, con muy buena aceptación en el mercado internacional.</CARACTERISTICAS>
+<COSECHA>La recolección es temprana, de setiembre a febrero y muy cotizada por su fácil compatibilidad con cafés de otras latitudes. Es ideal para los llamados Christmas blends.</COSECHA>
+<ORGANOLEPTICO>La dureza del grano es en un 40% buena y en un 60% media y sus características de taza son de acidez, aroma y cuerpo normal (40% buena, 60% media).</ORGANOLEPTICO>
+
+</REGION>
+
+*/
