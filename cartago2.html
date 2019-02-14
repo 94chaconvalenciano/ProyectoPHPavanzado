@@ -1,0 +1,329 @@
+
+	<docytpe>
+
+	<html>
+
+	<head>
+
+	<meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="cartago.css">
+        <link rel="stylesheet" href="assets/style.css" type="text/css">
+       <link rel="stylesheet" type="text/css" href="stilo/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+
+        <title>Café Au Lait</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+        <script src="assets/header.js"></script>
+
+  
+
+        </head>
+
+
+
+        <body>
+
+       
+        <main>
+
+     <section class="cover">
+
+                <p class="tituloprincipal">cartago</p>
+
+                <p></p>
+            </section>
+
+        
+
+       <demo id="idcafe">
+            
+<div class="container">
+            <section class="sec100">
+
+                <h1>lugares donde producen cafe   </h1>
+               <p id="demo">
+                <p >Cartago es el centro poblado del Norte del Valle del Cauca, una zona afectada por las cordilleras central y oriental, lo que le otorga las cualidades geográficas necesarias para la producción de café.
+                    La zona cafetalera se ubica en tierra de influencia del Volcán Irazú y esa cercanía ha permitido producir una bebida gourmet que se conoce como el Bordeaux de Costa Rica y aparte esta orosi, es una  zona cafetalera  se puede describir como un valle alargado protegido por sus laderas. Comprende las subregiones: Orosi, Cachí y Paraíso. produce café en fincas con altitudes que van de los 1.000 a los 1.400 metros; Cachí entre los 1.000 y 1.300 y Paraíso de 1.200 a 1.350 metros. Tiene suelos de origen volcánico, de alta fertilidad.
+                ahora conocida como Los Santos. Protegida por sierras en la vertiente del Pacífico, esta región es un santuario de aves místicas y bosques. Caturra y Catuaí son las principales variedades, que producen café con una cafeína muy suave, una característica muy apreciada por los mercados más exigentes del mundo.</p>
+                <p>Con el funcionamiento de ese ferrocarril, el traslado de los productos agrícolas al centro del país para su venta, distribución y exportación fue una realidad; entonces el cultivo de café se convirtió en una importante actividad económica para esta relativamente nueva zona productora. El uso del suelo es interesante dado que es común observar la combinación del cultivo de café con caña de azúcar y potreros. En un área de 8.500 hectáreas, incluyendo el cantón Jiménez, se cultiva las variedades Caturra y Catuaí rojo bajo sombra de árboles de leguminosas y especies maderables, principalmente el Laurel. Los suelos son de origen volcánicos y aluviales.</p>
+
+ <button type="button" class="bnt bnt-primary" onclick="cargarDatos()">tipos de cafes</button>
+               <table id="idproducecafe" class="table table-striped"></table>
+                 <br>
+
+</div>
+
+
+            </section>
+
+           
+<section class="sec100">
+    <div id="contenido"></div>
+   <button class="bnt bnt-succeso" onclick="cambiarzonas()">tipos de zonas</button>
+    <h3>Características de cafe</h3>
+    <p>orosi su caracataristicas </p>
+      <div class="container">
+      	<div id="contenido3" class="container">
+      	</div>
+      		<button type="button" id="bntCargar2">orosicargar</button>
+      	</div>
+   
+    <p>Tarrazú su caracteristicas</p>
+    <div class="container">
+    	<div id="contenido4" class="container">
+    	</div>
+    	<button type="button" id="bntCargar">cargar</button>
+    </div>
+<p> Tres Ríos</p>
+<div class="container">
+    	<div id="contenido5" class="container">
+    	</div>
+    	<button type="button" id="bntCargar3">cargar</button>
+    </div>
+    
+
+<section class="sec100">
+    <h4> la Cosecha</h4>
+    <p> Orosi y Paraíso se recolecta  octubre a febrero.</p>
+    <div id="contenido2"></div>
+    
+     <button class="bnt bnt-succeso" onclick="cambiarmes()" >cosecha </button>
+     <div id="texto"></div>
+     <button class="bnt bnt-succeso" onclick="cambiartu()" >mas </button>
+     <div id="texto2"></div>
+     <button class="bnt bnt-succeso" onclick="cambiartarr()" >mas </button>
+<section class="sec100">
+	<h7>imagenes de cafe</h7>
+	<div id="ListaImagenes">
+<p><img src="imagenes/turrialba.jpg" title="turrialba"style="width:100px " alt="turrialba" onmouseover="aumentar(this)" ></p>
+		<p><img src="imagenes/tarrazu.jpg" style="width:100px  "onmouseover="aumentar(this)"></p>
+		<p><img src="imagenes/orosi.JPG" style="width:100px  " onmouseover="aumentar(this)"></p>
+		<p><img src="imagenes/tres%20rios.jpg" style="width: 100px"onmouseover="aumentar(this)"></p>
+	<div id="imagenGrande"></div>
+</div>
+</section>
+     
+</section>
+<section class="sec100">
+<h6>la produccion de cafe de cartago </h6>
+  <div class="container">
+    <form class="form-grup">
+   tipo de cafe <input type="text" class="form-control" onkeyup="Buscar(this.value)">
+   </form>
+   <p>Buscar los tipos de cafe </p><br>
+   <span id="resultado"></span>
+
+</section>
+<section class="sec100">
+	<h4>cafe error</h4>
+	<button>cambiarcafe</button>
+</section>
+
+                    
+<p id="demo"></p>
+                   
+
+                      
+
+                      <footer>
+
+                <p>Hecho con ❤ </p>
+<script type="text/javascript">
+	function ir(){
+		window.location.href="cartago2.html";
+	}
+</script>
+
+            
+<script >
+    var myJSON = '{"name":"cafe", "cartago":31, "city":""}';
+var myObj = JSON.parse(myJSON);
+document.getElementById("demo").innerHTML = myObj.name;
+</script>
+            </footer>
+
+
+   </main>
+<script type="text/javascript">
+function cargarDatos() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function(){
+     if (this.readyState == 4 && this.status == 200) {
+          leer(this);
+     }
+
+    };
+    xhttp.open("GET","sele.xml",true);
+    xhttp.send();
+
+    };
+    
+    function leer(xml){
+        var i;
+        var xmlDocumento = xml.responseXML;
+        var tabla = "<tr>TIPOS</tr><tr>PRODUCION</tr>";
+        var lista = xmlDocumento.getElementsByTagName("CAFE");
+
+
+     for (var i = 0; i <lista.length; i++) {
+       tabla+= "<tr><td>" + 
+       lista[i].getElementsByTagName("TIPOS")[0].childNodes[0].nodeValue + "<td></td>" + 
+       lista[i].getElementsByTagName("PRODUCION")[0].childNodes[0].nodeValue +
+       "<td></tr>"
+     }
+
+     document.getElementById("idproducecafe").innerHTML =tabla;
+
+    }
+	
+</script>
+    
+<script type="text/javascript">
+	function cambiarzonas() {
+		$("#contenido").load("text.txt");
+		// body...
+	}
+</script>
+<script type="text/javascript">
+	function cambiarmes() {
+		$("#contenido2").load("textmes.txt");
+		// body...
+	}
+</script>
+<script type="text/javascript">
+	function cambiartu() {
+		$("#texto").load("textcos.txt");
+		// body...
+	}
+</script>
+<script type="text/javascript">
+	function cambiartarr() {
+		$("#texto2").load("texttu.txt");
+		// body...
+	}
+</script>
+
+
+<script type="text/javascript">
+  function Buscar(caracteres){
+    if (caracteres.length == 0) {
+      document.getElementById("resultado").innerHTML="";
+      return;
+
+    }else{
+
+      xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+          document.getElementById("resultado").innerHTML = this.responseText;
+
+        }
+      };
+     xmlhttp.open("Get","datos.php?preguntar="+caracteres,true);
+      xmlhttp.send();
+
+    }
+  }
+</script>
+<script type="text/javascript">
+	$("#bntCargar").click(function(event){
+		var esperar = 2000;
+		$.ajax({
+			 url:"tarrazu.html",
+
+			 beforeSend : function(){
+			 	$('#contenido4').text('Cargando...');
+			 	// body...
+			 },
+			 success:function(data){
+			 	setTimeout(function(){
+			 		$('#contenido4').html(data);
+
+			 	},esperar
+			 	);
+
+			 }
+		});
+	});
+	
+</script>
+<script type="text/javascript">
+$("#bntCargar2").click(function(event){
+		var esperar = 2000;
+		$.ajax({
+			url:"orosi.html",
+
+			beforeSend : function(){
+				$('#contenido3').text('Cargando...');
+
+			},
+			success:function(data){
+				setTimeout(function(){
+					$('#contenido3').html(data);
+
+				},esperar
+				);
+			}
+		});
+		
+	});
+</script>
+<script type="text/javascript">
+	$("#bntCargar3").click(function(event){
+		var esperar = 2000;
+		$.ajax({
+			url:"cosecha.html",
+
+			beforeSend : function(){
+				$('#contenido5').text('Cargando...');
+
+			},
+			success:function(data){
+			setTimeout(function() {
+            $('#contenido5').html(data);
+            },esperar
+            );
+			
+			}
+		});
+		
+	});
+</script>
+<script type="text/javascript">
+	function precarga(urlImagen) {
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange=function(){
+			if (xhr.readyState == 4 && xhr.status == 200) {
+				var contenido = xhr.responseText;
+				var imagen = new Imagen();
+				imagen.src = contenido;
+			}
+		};
+		xhr.open("GET",urlImagen,true);
+		xhr.send(null);
+	}
+   
+		function aumentar(imagen) {
+			 var directorio = imagen.src;
+            var imagenAumentada = "<img src='" + directorio + "'>";
+            document.getElementById("imagenGrande").innerHTML = imagenAumentada;
+	}
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(document).ajaxError(function(){
+            alert("!ha ocurriodo un error ");
+		});
+		$("button").click(function(){
+			$("h2").load("tex.txt");
+
+		});
+	});
+</script>
+
